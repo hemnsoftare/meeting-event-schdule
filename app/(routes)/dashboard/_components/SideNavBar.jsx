@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
-
+import { IoIosHome } from "react-icons/io";
 function SideNavBar() {
     const menu=[
         {
@@ -26,13 +26,13 @@ function SideNavBar() {
             path:'/dashboard/availability',
             icon:Clock
         },
+       
         {
-            id:4,
-            name:'Settings',
-            path:'/dashboard/settings',
-            icon:Settings
+            id:3,
+            name:'home',
+            path:'/',
+            icon:IoIosHome 
         },
-
     ]
 
     const path=usePathname();

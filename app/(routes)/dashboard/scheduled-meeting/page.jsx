@@ -4,8 +4,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ScheduledMeetingList from './_components/ScheduledMeetingList'
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs';
-import { app } from '@/config/FirebaseConfig'
 import { format } from 'date-fns'
+import { app } from '@/config/FirebaseConfig'
 
 function ScheduledMeeting() {
 

@@ -8,12 +8,13 @@ import React, { useEffect, useState } from 'react'
 import TimeDateSelection from './TimeDateSelection'
 import UserFormInfo from './UserFormInfo'
 import { collection, doc, getDocs, getFirestore, query, setDoc, where } from 'firebase/firestore'
-import { app } from '@/config/FirebaseConfig'
+
 import { toast } from 'sonner'
 import { useRouter } from 'next/navigation'
 import Plunk from '@plunk/node'
 import { render } from '@react-email/render';
 import Email from '@/emails'
+import { app } from '@/config/FirebaseConfig'
 function MeetingTimeDateSelection({eventInfo,businessInfo}) {
     const [date,setDate]=useState(new Date())
     const [timeSlots,setTimeSlots]=useState();

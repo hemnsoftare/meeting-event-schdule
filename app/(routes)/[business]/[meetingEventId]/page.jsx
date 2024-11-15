@@ -1,8 +1,9 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import MeetingTimeDateSelection from '../_components/MeetingTimeDateSelection'
+import MeetingTimeDateSelection from '../_components/MeetingTimeDateSelection';
 import { collection, doc, getDoc, getDocs, getFirestore, query, where } from 'firebase/firestore'
 import { app } from '@/config/FirebaseConfig';
+
 
 function SharedMeetingEvent({params}) {
     const db=getFirestore(app);

@@ -16,10 +16,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ThemeOptions from '@/app/_utils/ThemeOptions'
 import { doc, getFirestore, setDoc } from 'firebase/firestore'
-import { app } from '@/config/FirebaseConfig'
+
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
 import { toast } from 'sonner'
 import { useRouter } from 'next/navigation'
+import { app } from '@/config/FirebaseConfig'
 
   
 function MeetingForm({setFormValue}) {
